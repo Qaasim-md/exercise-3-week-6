@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="" style="--vueuse-safe-area-top: env(safe-area-inset-top, 0px); --vueuse-safe-area-right: env(safe-area-inset-right, 0px); --vueuse-safe-area-bottom: env(safe-area-inset-bottom, 0px); --vueuse-safe-area-left: env(safe-area-inset-left, 0px);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module" src="./Home and Beyond - Property Listing_files/virtual_vue-devtools-path_overlay.js.download"></script>
+    <script type="module" src="./Home and Beyond - Property Listing_files/virtual_vue-inspector-path_load.js.download"></script>
+
+    <script type="module" src="./Home and Beyond - Property Listing_files/client"></script>
+
+    
+    <link rel="icon" href="http://localhost:5173/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home and Beyond - Property Listing</title>
+  <link rel="stylesheet" href="./Home and Beyond - Property Listing_files/devtools-overlay.css"><style type="text/css" data-vite-dev-id="C:/Users/YC Student/Desktop/Vue.js/Property-mini-listing/node_modules/vite-plugin-vue-inspector/src/Overlay.vue?vue&amp;type=style&amp;index=0&amp;scoped=31d1379f&amp;lang.css">
+.vue-inspector-container[data-v-31d1379f] {
+  cursor: pointer;
+  position: fixed;
+  text-align: center;
+  z-index: 2147483647;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.vue-inspector-card[data-v-31d1379f] {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 8px;
+  border-radius: 4px;
+  text-align: left;
+  color:#e9e9e9;
+  font-size: 14px;
+  background-color:#42b883;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.vue-inspector-card .tip[data-v-31d1379f] {
+  font-size: 11px;
+  opacity: 0.7;
+}
+.vue-inspector-banner[data-v-31d1379f] {
+  display: none;
+  position: absolute;
+  margin: 0;
+  width: 260px;
+  text-decoration: none;
+}
+.vue-inspector-container:hover .vue-inspector-banner[data-v-31d1379f] {
+  display: block;
+}
+.vue-inspector-container--disabled:hover .vue-inspector-banner[data-v-31d1379f] {
+  display: none;
+}
+.vue-inspector-floats[data-v-31d1379f] {
+  z-index: 2147483647;
+  position: fixed;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.vue-inspector-size-indicator[data-v-31d1379f] {
+  z-index: 2147483646;
+  position: fixed;
+  background-color:#42b88325;
+  border: 1px solid #42b88350;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.vue-inspector-animated[data-v-31d1379f] {
+  transition: all 0.1s ease-in;
+}
+@media (prefers-reduced-motion) {
+.vue-inspector-animated[data-v-31d1379f] {
+    transition: none !important;
+}
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/YC Student/Desktop/Vue.js/Property-mini-listing/src/assets/main.css">/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/YC Student/Desktop/Vue.js/Property-mini-listing/src/components/HeaderBar.vue?vue&amp;type=style&amp;index=0&amp;lang.css">
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+header h1 {
+  font-size: 50px;
+  font-weight: 1000;
+}
+header .active-count {
+  background: lightblue;
+  padding: 6px 12px;
+  color: purple;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/YC Student/Desktop/Vue.js/Property-mini-listing/src/components/SearchSortBar.vue?vue&amp;type=style&amp;index=0&amp;lang.css">
+.search-sort-bar {
+  margin: 20px 0 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.search-sort-bar input,
+.search-sort-bar select {
+  padding: 10px 14px;
+  border: 1px solid purple;
+  border-radius: 6px;
+  flex: 1;
+  font-size: 15px;
+  background: lightblue
+}
+.search-sort-bar label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/YC Student/Desktop/Vue.js/Property-mini-listing/src/components/PropertyCard.vue?vue&amp;type=style&amp;index=0&amp;lang.css">
+.property-card {
+  background: purple;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+.property-card img {
+  width: 50%;
+  height: 150px;
+  object-fit: cover;
+}
+.property-card .content {
+  padding: 20px;
+}
+.property-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.property-card .location {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+.property-card .price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.property-card .fav-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color .2s;
+}
+.property-card .fav-btn.active {
+  color: purple;
+}
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/YC Student/Desktop/Vue.js/Property-mini-listing/src/App.vue?vue&amp;type=style&amp;index=0&amp;lang.css">
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: lightskyblue;
+  color: purple;
+  line-height: 1.5;
+}
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.empty {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px;
+  color: purple;
+  font-style: italic;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+.badge {
+  display: inline-block;
+  background: lightblue;
+  color: purple;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.badge.unavailable {
+  background: purple;
+}
+
+</style></head>
+  <body>
+    <div id="app" data-v-app=""><div class="app-container"><header class="header"><div class="brand"><h1>Homes and Beyond</h1><p>5 properties available</p></div><div class="controls"></div></header><div style="display: flex; gap: 10px; align-items: center;"><input class="search-input" placeholder="Search by title or location..."><select class="select"><option value="low">Price: low → high</option><option value="high">Price: high → low</option></select><button class="select">Show unavailable </button></div><main><!--v-if--><section class="grid"><div class="card"><div class="ribbon" style="position: relative;"><img src="./Home and Beyond - Property Listing_files/camps-bay-ville.webp" alt="Villa"><!--v-if--></div><div class="card-content"><div class="card-row"><div><div style="font-weight: 700;">Villa</div><div class="small">camps bay, Cape Town • Studio</div></div><div style="text-align: right;"><div class="price">R 7,500,000</div><button class="bookmark" title="Bookmark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></button></div></div><div class="small">ID: 1</div></div></div><div class="card"><div class="ribbon" style="position: relative;"><img src="./Home and Beyond - Property Listing_files/modern-house.webp" alt="Fairheaven house"><!--v-if--></div><div class="card-content"><div class="card-row"><div><div style="font-weight: 700;">Fairheaven house</div><div class="small">Fairheaven, Cape Town • Modern house</div></div><div style="text-align: right;"><div class="price">R 3,500,000</div><button class="bookmark" title="Bookmark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></button></div></div><div class="small">ID: 4</div></div></div><div class="card"><div class="ribbon" style="position: relative;"><img src="./Home and Beyond - Property Listing_files/modern-house-1.webp" alt="Clifton Beach house"><!--v-if--></div><div class="card-content"><div class="card-row"><div><div style="font-weight: 700;">Clifton Beach house</div><div class="small">Clifton, Cape Town • Modern house 1</div></div><div style="text-align: right;"><div class="price">R 2,200,000</div><button class="bookmark" title="Bookmark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></button></div></div><div class="small">ID: 2</div></div></div><div class="card"><div class="ribbon" style="position: relative;"><img src="./Home and Beyond - Property Listing_files/penthouse.webp" alt="Green Point penthouse"><!--v-if--></div><div class="card-content"><div class="card-row"><div><div style="font-weight: 700;">Green Point penthouse</div><div class="small">Green Point, Cape Town • Penthouse</div></div><div style="text-align: right;"><div class="price">R 1,600,000</div><button class="bookmark" title="Bookmark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></button></div></div><div class="small">ID: 5</div></div></div><div class="card"><div class="ribbon" style="position: relative;"><img src="./Home and Beyond - Property Listing_files/modern-house-2.webp" alt="City Bowl house"><!--v-if--></div><div class="card-content"><div class="card-row"><div><div style="font-weight: 700;">City Bowl house</div><div class="small">City Bowl, Cape Town • Modern house 2</div></div><div style="text-align: right;"><div class="price">R 1,200,000</div><button class="bookmark" title="Bookmark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg></button></div></div><div class="small">ID: 3</div></div></div></section></main></div></div>
+    <script type="module" src="./Home and Beyond - Property Listing_files/main.js.download"></script>
+  
+
+<script src="./Home and Beyond - Property Listing_files/devtools-overlay.mjs" type="module"></script><div id="vue-inspector-container" data-v-app=""><div data-v-31d1379f="" data-v-inspector-ignore="true"><!--v-if--><!-- Overlay --><!--v-if--></div></div><div id="__vue-devtools-container__" data-v-inspector-ignore="true" data-v-app=""><div data-v-640ec535="" class="vue-devtools__anchor vue-devtools__anchor--hide" style="left: 378px; top: 707px; --vue-devtools-widget-bg: #121212; --vue-devtools-widget-fg: #F5F5F5; --vue-devtools-widget-border: #3336; --vue-devtools-widget-shadow: rgba(0,0,0,0.3);"><div data-v-640ec535="" class="vue-devtools__anchor--glowing" style=""></div><div data-v-640ec535="" class="vue-devtools__panel" style="transform: translate(-50%, calc(-50% + 15px)); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"><div data-v-640ec535="" class="vue-devtools__anchor-btn panel-entry-btn" title="Toggle Vue DevTools" aria-label="Toggle devtools panel" style="filter: saturate(0);"><svg data-v-640ec535="" viewBox="0 0 256 198" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-640ec535="" fill="#41B883" d="M204.8 0H256L128 220.8L0 0h97.92L128 51.2L157.44 0h47.36Z"></path><path data-v-640ec535="" fill="#41B883" d="m0 0l128 220.8L256 0h-51.2L128 132.48L50.56 0H0Z"></path><path data-v-640ec535="" fill="#35495E" d="M50.56 0L128 133.12L204.8 0h-47.36L128 51.2L97.92 0H50.56Z"></path></svg></div><div data-v-640ec535="" class="vue-devtools__panel-content vue-devtools__panel-divider"></div><div data-v-640ec535="" class="vue-devtools__anchor-btn vue-devtools__panel-content vue-devtools__inspector-button active" title="Toggle Component Inspector"><svg data-v-640ec535="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1.1em; width: 1.1em; opacity: 1; color: rgb(0, 220, 130);"><g data-v-640ec535="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle data-v-640ec535="" cx="12" cy="12" r=".5" fill="currentColor"></circle><path data-v-640ec535="" d="M5 12a7 7 0 1 0 14 0a7 7 0 1 0-14 0m7-9v2m-9 7h2m7 7v2m7-9h2"></path></g></svg></div></div><div data-v-399f5059="" data-v-640ec535="" class="vue-devtools-frame" style="z-index: -1; pointer-events: auto; width: min(80vw, -48px + 100vw); height: min(60vh, -48px + 100vh); left: 0px; transform: translate(-50%, 0px); bottom: 0px; display: none;"><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize--horizontal" style="top: 0px;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize--horizontal" style="bottom: 0px; display: none;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize--vertical" style="left: 0px;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize--vertical" style="right: 0px;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize-corner" style="top: 0px; left: 0px; cursor: nwse-resize;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize-corner" style="top: 0px; right: 0px; cursor: nesw-resize;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize-corner" style="bottom: 0px; left: 0px; cursor: nesw-resize; display: none;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize-corner" style="bottom: 0px; right: 0px; cursor: nwse-resize; display: none;"></div></div></div></div></body></html>
